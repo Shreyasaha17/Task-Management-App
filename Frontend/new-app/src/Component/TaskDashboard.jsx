@@ -112,30 +112,17 @@ const TaskDashboard = () => {
                     <Form onSubmit={handleCreateOrUpdateTask}>
                         <Form.Group className="mb-3">
                             <Form.Label>Title</Form.Label>
-                            <Form.Control
-                                type="text"
-                                value={title}
-                                onChange={(e) => setTitle(e.target.value)}
-                                required
-                            />
+                            <Form.Control type="text"  value={title} onChange={(e) => setTitle(e.target.value)} required/>
                         </Form.Group>
 
                         <Form.Group className="mb-3">
                             <Form.Label>Description</Form.Label>
-                            <Form.Control
-                                type="text"
-                                value={description}
-                                onChange={(e) => setDescription(e.target.value)}
-                            />
+                            <Form.Control type="text" value={description} onChange={(e) => setDescription(e.target.value)}/>
                         </Form.Group>
 
                         <Form.Group className="mb-3">
                             <Form.Label>Status</Form.Label>
-                            <Form.Select
-                                value={status}
-                                onChange={(e) => setStatus(e.target.value)}
-                                required
-                            >
+                            <Form.Select value={status}onChange={(e) => setStatus(e.target.value)}  required>
                                 <option value="">Select Status</option>
                                 <option value="Pending">Pending</option>
                                 <option value="In Progress">In Progress</option>
